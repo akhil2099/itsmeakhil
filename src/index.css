@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.hero {
+  background: url(./images/hero-bg.svg) top center no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background: url(./images/footer.svg) top center no-repeat;
+  background-size: cover;
+}
+
+.cta {
+  background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) fixed center center;
+}
+
+
+/*  */
+.particle {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2); /* Light-colored floating particles */
+  border-radius: 50%;
+  opacity: 0.9;
+  pointer-events: none;
+  animation: float infinite ease-in-out;
+  max-width: 20px; /* Ensure particles do not exceed this width */
+  max-height: 20px; /* Ensure particles do not exceed this height */
+}
+/* Floating Animation */
+@keyframes float {
+  0% {
+      transform: translateY(0) translateX(0);
+      opacity: 0.5;
+  }
+  50% {
+      transform: translateY(-30px) translateX(20px);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(0) translateX(0);
+      opacity: 0.5;
+  }
+}
+
+
