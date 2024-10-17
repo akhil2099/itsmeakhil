@@ -41,17 +41,17 @@ const Portfolio = () => {
 
         <div className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl top-1/4 left-1/4 animate-pulse">
         <div 
-        className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl bottom-1/4 right-1/4 animate-pulse"
+        className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-5xl bottom-1/4 right-1/4 animate-pulse"
         style={{ animationDelay: "1s" }}
         />
         </div>
 
         <div className="relative z-20 flex flex-col justify-center items-center text-center transition-all duration-500 ease-in-out transform group-hover:scale-130">
           <div className="flex justify-center items-center mb-4">
-            <FaCode className="text-[10rem] text-white transition-all duration-500 group-hover:text-purple-400" />
+            <FaCode className="text-[10rem] text-white transition-all duration-500 group-hover:text-white" />
           </div>
           <h2 className="text-5xl font-bold text-white mb-2">DevOps</h2>
-          <p className="text-xl text-purple-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:text-gray-400">
+          <p className="text-xl text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:text-gray-400">
             Explore my technical projects
           </p>
         </div>
@@ -74,17 +74,17 @@ const Portfolio = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black h-screen opacity-100 transition-opacity duration-600 ease-in-out group-hover:opacity-100" />
         <div className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl top-1/4 left-1/4 animate-pulse">
         <div 
-        className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl bottom-1/4 right-1/4 animate-pulse"
+        className="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-5xl bottom-1/4 right-1/4 animate-pulse"
         style={{ animationDelay: "1s" }}
         />
         </div>
 
         <div className="relative z-20 flex flex-col justify-center items-center text-center transition-all duration-500 ease-in-out transform group-hover:scale-130">
           <div className="flex justify-center items-center mb-4">
-            <FaCamera className="text-[8rem] text-white transition-all duration-500 group-hover:text-purple-400" />
+            <FaCamera className="text-[8rem] text-white transition-all duration-500 group-hover:text-white-400" />
           </div>
           <h2 className="text-5xl font-bold text-white mb-2">Photography</h2>
-          <p className="text-xl text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:text-gray-400">
+          <p className="text-xl text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:text-gray-400">
             View my photography portfolio
           </p>
           </div>
