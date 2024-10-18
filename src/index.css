@@ -52,3 +52,32 @@ body{
 }
 
 
+
+
+
+
+
+
+
+.glow-effect {
+  position: relative; /* Ensure positioning for the glow */
+  padding: 1rem; /* Reduced padding for smaller height */
+  text-align: center; /* Center the text */
+  color: #fff; /* Text color */
+  font-size: 1.5rem; /* Adjust font size */
+  background: linear-gradient(100deg, rgba(7, 10, 33, 0.8), rgba(5, 14, 50, 0.8)); /* Dark blended background */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.glow-effect:hover {
+  transform: scale(1.03); /* Slightly enlarge on hover */
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+
+

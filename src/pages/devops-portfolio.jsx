@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Marquee from '../components/Marquee/Marquee';
 import {
   Github,
   Linkedin,
@@ -9,12 +10,10 @@ import {
   Briefcase,
   GraduationCap,
   Award,
+  Check,
 } from "lucide-react";
 
-import { Check } from "lucide-react"; 
-
 const iconsArray = [Github, Linkedin, Mail, Star, Code];
-
 
 const PortfolioSection = ({
   title,
@@ -44,9 +43,7 @@ const PortfolioSection = ({
       if (element) observer.unobserve(element);
     };
   }, [index]);
-  const IconComponent = iconsArray[index];
-  console.log("Icon Component:", IconComponent);
-  
+
   return (
     <div
       id={`section-${index}`}
@@ -70,7 +67,6 @@ const PortfolioSection = ({
           style={{ minHeight: isHovered ? "auto" : "5rem" }}
         >
           <div className="flex items-center mb-4">
-            
             <h2 className="text-xl font-bold text-blue-400">{title}</h2>
           </div>
 
@@ -91,7 +87,7 @@ const PortfolioSection = ({
                     className="flex items-center text-sm text-gray-500 hover:text-blue-400 transition-all duration-300"
                     style={{ transitionDelay: `${idx * 50}ms` }}
                   >
-                    <Check className="w-4 h-4 text-blue-500 mr-3" /> {/* Replaced dot with icon */}
+                    <Check className="w-4 h-4 text-blue-500 mr-3" />
                     {detail}
                   </div>
                 ))}
@@ -102,16 +98,13 @@ const PortfolioSection = ({
       </div>
 
       <div className="w-1/2 flex justify-center ml-10 mr-10">
-      <div className="p-3 rounded-lg bg-blue-500/10 mr-4">
-              <Icon className={`w-6 h-6 text-blue-400 transition-all duration-1000 ${isHovered ? "w-12 h-12" : ""}`} />
-      </div>
-
+        <div className="p-3 rounded-lg bg-blue-500/10 mr-4">
+          <Icon className={`w-6 h-6 text-blue-400 transition-all duration-1000 ${isHovered ? "w-12 h-12" : ""}`} />
+        </div>
       </div>
     </div>
   );
 };
-
-
 
 const SocialLinks = () => (
   <div className="fixed top-4 right-4 flex gap-4 backdrop-blur-lg bg-gray-900/30 p-3 rounded-full">
@@ -246,12 +239,12 @@ const DevopsPortfolio = () => {
   ];
 
   return (
-    <div className="min-h-screen text-white font-mono p-8 relative ">
+    <div className="min-h-screen text-white font-mono p-8 relative">
       <Background />
       <ScrollProgress />
       <SocialLinks />
       {/* Main Heading */}
-      <h1 className="text-3xl font-bold text-center mb-8 font-mono text-blue-500 ">
+      <h1 className="text-3xl font-bold text-center mb-8 font-mono text-blue-500">
         DevOps Portfolio
       </h1>
       <div className="max-w-6xl mx-auto relative">
@@ -265,6 +258,7 @@ const DevopsPortfolio = () => {
           />
         ))}
       </div>
+      <Marquee />
     </div>
   );
 };
