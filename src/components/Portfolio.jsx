@@ -13,7 +13,7 @@ const Portfolio = () => {
     <div className="flex h-screen w-full relative overflow-hidden">
       <NavBar />
       {/* Logo Section */}
-      <div className="absolute inset-0 flex justify-center items-center z-20">
+      <div className="absolute inset-0 flex justify-center  items-center z-20">
         <img
           src={logoImg}
           alt="Akhil's Logo"

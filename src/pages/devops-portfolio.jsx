@@ -216,31 +216,30 @@ const DevopsPortfolio = () => {
       title: "Notable Projects",
       content: "Led and contributed to various high-impact projects",
       details: [
-        "Real-time Collaboration Platform",
-        "Enterprise E-commerce Solution",
-        "ML-based Recommendation Engine",
-        "Automated DevOps Pipeline",
+        "Automating Infrastructure and Continuous Integration on AWS",
+        "JMeter Automation using GitHub Actions with Perfaction",
+        "SonarQube Automation with Jenkins for Code Quality Checks",
+        "Automated Deployment of Scalable Web Application Infrastructure",
+        "React Frontend Deployment for Photography Website"
       ],
       icon: Trophy,
     },
     {
       title: "Education",
-      content: "Strong academic foundation in Computer Science",
+      content: "Strong academic foundation in Computer Applications",
       details: [
-        "B.S. in Computer Science, XYZ University",
-        "Minor in Mathematics",
-        "GPA: 3.8/4.0",
+        "Bachelor in Computer Application, IHRD College of Applied Science",
+        "Holy Angels EMHSS Adoor - 11th and 12th",
+        "Kendriya Vidyalaya Chenneerkara - 10th"
       ],
       icon: GraduationCap,
     },
     {
-      title: "Certifications",
-      content: "Industry-recognized technical certifications",
+      title: "Certifications & Training",
+      content: "Internships & Training",
       details: [
-        "AWS Certified Solutions Architect",
-        "Google Cloud Professional Developer",
-        "Kubernetes Administrator (CKA)",
-        "Azure DevOps Engineer Expert",
+        "DevOps Course: 7-month course with internship at Synnefo Solutions",
+        "System Administrator Training and Internship at Techvantage Analytics"
       ],
       icon: Award,
     },
