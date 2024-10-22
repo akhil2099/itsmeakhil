@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Marquee from '../components/Marquee/Marquee';
 import {
   Github,
   Linkedin,
@@ -12,6 +11,8 @@ import {
   Award,
   Check,
 } from "lucide-react";
+import MarqueeR from "../components/Marquee/MarqueeR";
+import MarqueeL from "../components/Marquee/MarqueeL";
 
 const iconsArray = [Github, Linkedin, Mail, Star, Code];
 
@@ -258,7 +259,8 @@ const DevopsPortfolio = () => {
           />
         ))}
       </div>
-      <Marquee />
+      <MarqueeR />
+      <MarqueeL />
     </div>
   );
 };

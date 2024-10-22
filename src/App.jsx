@@ -14,6 +14,7 @@ import DemoProduct from './pages/DemoProduct';
 import Portfolio from './components/Portfolio';
 import Cursor from './components/cursor';
 import DevopsPortfolio from './pages/devops-portfolio';
+import PhotographyPortfolio from './pages/photography-portfolio';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -46,6 +47,7 @@ function App() {
             <Route path="/contact-us" element={<DemoProduct />} />
             <Route path="/portfolio" element={<Portfolio />} /> 
             <Route path="/devops-portfolio" element={<DevopsPortfolio />} />
+            <Route path="/photography-portfolio" element={<PhotographyPortfolio />} />
           </Routes>
         </ScrollToTop>
       </Router>
