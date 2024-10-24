@@ -10,7 +10,13 @@ const ToolIcon = ({ name, iconPath }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img src={iconPath} alt={name} className="w-12 h-12 object-contain" />
+      <div className="w-12 h-12 flex items-center justify-center">
+        <img 
+          src={iconPath} 
+          alt={name} 
+          className="w-full h-full object-contain" // Added shadow-white class
+        />
+      </div>
       <span
         className={`mt-2 text-xs text-blue-300 transition-opacity duration-300 ${
           isHovered ? 'opacity-100' : 'opacity-0'
@@ -21,6 +27,7 @@ const ToolIcon = ({ name, iconPath }) => {
     </div>
   );
 };
+
 
 const MarqueeR = () => {
   const tools = [
@@ -46,18 +53,15 @@ const MarqueeR = () => {
     { name: "Tailwind CSS", iconPath: "/images/skills/terraform.svg" },
   ];
 
+
+  const marqueeTools = [...tools, ...tools];
+
   return (
     <div className="py-8 overflow-hidden relative">
-      <h3 className="text-center text-blue-400 mb-4 text-xl">I have used these tools</h3>
       <div className="relative w-full overflow-hidden">
-        <div className="flex animate-marquee whitespace-nowrap">
-          {tools.map((tool, index) => (
+        <div className="flex animate-marqueeRight whitespace-nowrap">
+          {marqueeTools.map((tool, index) => (
             <ToolIcon key={index} name={tool.name} iconPath={tool.iconPath} />
-          ))}
-        </div>
-        <div className="flex absolute top-0 left-0 animate-marquee2 whitespace-nowrap">
-          {tools.map((tool, index) => (
-            <ToolIcon key={index + tools.length} name={tool.name} iconPath={tool.iconPath} />
           ))}
         </div>
       </div>

@@ -22,6 +22,54 @@ body{
 .cta {
   background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) fixed center center;
 }
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marqueeLeft {
+  animation: marqueeLeft 20s linear infinite;
+  display: flex;
+}
+@keyframes marqueeRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marqueeRight {
+  animation: marqueeRight 20s linear infinite;
+  display: flex;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.flex {
+  display: flex;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 
 
 /*  */
@@ -80,4 +128,27 @@ body{
 }
 
 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Additional styles for modal and other elements can go here */
 

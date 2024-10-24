@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaCode, FaCamera } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useDocTitle } from "./CustomHook.jsx";
-import logoImg from "../images/IMG_3116.png"; // Update this path
+import logoImg from "../images/StreetLight.png"; // Update this path
 import NavBar from "./Navbar/NavBar";
 
 const Portfolio = () => {
