@@ -11,7 +11,7 @@ import {
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import DemoProduct from './pages/DemoProduct';
-import Portfolio from './components/Portfolio';
+import Portfolio from './pages/Portfolio';
 import Cursor from './components/cursor';
 import DevopsPortfolio from './pages/devops-portfolio';
 import PhotographyPortfolio from './pages/photography-portfolio';
