@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Instagram, Youtube, Phone, Heart, Share2, ZoomIn, X } from 'lucide-react';
+import { FaArrowAltCircleLeft } from 'react-icons/fa';
 
 const PhotographyPortfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -185,7 +186,7 @@ const PhotographyPortfolio = () => {
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center relative overflow-hidden pt-20">
         <div className="container mx-auto px-6 text-center relative z-10">
-          <h1 className="sacramento-regular text-7xl mb-6">Capturing Moments</h1>
+          <h1 className="sacramento-regular text-7xl mb-6  sparkle">Capturing Moments</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Every photograph tells a story, every moment becomes eternal
           </p>
@@ -220,11 +221,28 @@ const PhotographyPortfolio = () => {
         ) : selectedCategoryData ? (
           <div>
             <button
-              onClick={() => setSelectedCategory(null)}
-              className="mb-6 text-sm text-blue-600 hover:underline"
-            >
-              Back to Categories
-            </button>
+  onClick={() => setSelectedCategory(null)}
+  className="group flex items-center gap-4 mb-6 px-5 py-3
+             bg-gray-900/90 text-gray-100 rounded-lg
+             font-medium tracking-wide
+             shadow-lg shadow-gray-900/30
+             transition-all duration-300 ease-out
+             hover:bg-gray-800 hover:translate-x-[-4px]
+             hover:shadow-xl hover:shadow-gray-900/40
+             active:translate-x-[-2px] active:shadow-md
+             backdrop-blur-sm"
+>
+  <FaArrowAltCircleLeft 
+    className="w-5 h-5 text-gray-300
+               transition-all duration-300 
+               group-hover:transform group-hover:translate-x-[-4px]
+               group-hover:text-blue-400" 
+  />
+  <span className="transition-colors duration-300
+                   group-hover:text-blue-100">
+    Back to Categories
+  </span>
+</button>
             <h2 className="sacramento-regular text-3xl mb-8 text-gray-100">{selectedCategory}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {selectedCategoryData.images.map((image) => (
